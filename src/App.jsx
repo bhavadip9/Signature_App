@@ -1,8 +1,8 @@
-
 import { useState } from 'react'
 import Appname from './assets/Componet/Appname';
 import Selector from './assets/Componet/Selector';
 import Singnature from './assets/Componet/Singnature';
+import './App.css'
 
 
 
@@ -24,10 +24,11 @@ function App() {
 
   return (
     <>
-      <Appname />
-      <Selector penColor={penColor} penSize={penSize} setpenColor={setpenColor} setpenSize={setpenSize} />
-      <Singnature penColor={penColor} penSize={penSize} saveHandler={saveHandler} clearHandler={clearHandler} result={result} setSingnature={setSingnature} />
-
+      <div className='fullbody'>
+        <Appname />
+        <Selector penColor={penColor} penSize={penSize} setpenColor={setpenColor} setpenSize={setpenSize} />
+        <Singnature penColor={penColor} penSize={penSize} saveHandler={saveHandler} clearHandler={clearHandler} result={result} setSingnature={setSingnature} />
+      </div>
     </>
   )
 }

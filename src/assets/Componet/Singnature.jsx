@@ -4,7 +4,7 @@ import SignatureCanvas from 'react-signature-canvas'
 const Singnature = ({ setSingnature, penColor, penSize, clearHandler, saveHandler, result }) => {
     return (
         <>
-            <div style={{ border: `1px solid ${penColor}`, borderRadius: "5px", width: "500px", margin: "20px 0 0 0" }}>
+            <div style={{ border: `2px solid ${penColor}`, borderRadius: "5px", width: "500px", margin: "20px 0 0 0" }}>
                 <SignatureCanvas
                     ref={(ref) => setSingnature(ref)}
                     dotSize={penSize}
