@@ -9,7 +9,7 @@ const Singnature = ({ setSingnature, penColor, penSize, clearHandler, saveHandle
 
     return (
         <div style={{ textAlign: 'center', margin: '10px' }}>
-            <div style={{ border: `2px solid ${penColor}`, borderRadius: '5px', width: '100%', maxWidth: '500px', margin: '20px auto' }}>
+            <div style={{ border: `2px solid ${penColor}`, borderRadius: '5px', maxWidth: '500px', margin: '20px auto' }}>
                 <SignatureCanvas
                     ref={(ref) => setSingnature(ref)}
                     dotSize={penSize}
